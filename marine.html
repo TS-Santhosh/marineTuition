@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Engineering Tuition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #000f46;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #000f46;
+            padding: 10px;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hamburger {
+            display: none;
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #000f46;
+        }
+        .hamburger-menu ul {
+            flex-direction: column;
+            padding: 10px;
+        }
+        main {
+            
+            padding: 20px 20px 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #000f46;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #000f46;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-info {
+            font-size: 1.2em;
+        }
+        a {
+            color: #000f46;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+            }
+            nav ul.active {
+                display: flex;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Marine Engineering Tuition</h1>
+        <p>Expert Guidance for Aspiring Marine Engineers</p>
+    </header>
+    <nav>
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Santhosh TS, a marine professional with 42 years of experience, including 32 years as a Chief Engineer on various vessels. Many of you may know me from my time as Visiting Faculty at IMEI, Eurotech, or CUSAT, where I conducted classes for Class 1 & 2 Engineers, Second Mates, Phase 2, ASM, revalidation courses, simulator training, oil tanker and chemical tanker safety courses, firefighting, and other safety courses.</p>
+        </div>
+        <div class="section" id="services">
+            <h2>My Services</h2>
+            <p>I am now offering online classes for junior engineers preparing for the Class 4 Marine Engineers Exam. These sessions are tailored to address the gaps in traditional learning resources, focusing on practical troubleshooting, modern machinery, and MMD exam requirements. My goal is to empower students with the skills and knowledge needed for both exams and onboard challenges.</p>
+            <p>I kindly request your support in recommending these classes to junior engineers in your network or onboard. Your endorsement would make a significant difference.</p>
+        </div>
+        <div class="section" id="testimonials">
+            <h2>Testimonials</h2>
+            <p>"Santhosh TS's classes were invaluable for my Class 4 exam preparation. Highly recommended!" - Alex</p>
+            <p>"I gained practical insights that helped me succeed onboard. Thank you, Sir!" - Priya</p>
+        </div>
+        <div class="section" id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="resource1.pdf" download>Class 4 Exam Preparation Guide</a></li>
+                <li><a href="https://maritimeknowledgehub.com" target="_blank">Marine Engineering Knowledge Hub</a></li>
+            </ul>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <p>If you're interested in my tuition services, feel free to reach out:</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:silver.spring02@gmail.com">silver.spring02@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919447833996">+91 9447833996 (WhatsApp)</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marine Engineering Tuition. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
